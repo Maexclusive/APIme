@@ -1,5 +1,6 @@
 ## OTAKUANIME API
 
+
 ####  OTAKUDESU ANIME SUBTITLE INDONESIA 
 
 | Features | Options | Status |
@@ -17,3 +18,17 @@ ____
 <div align="center" width="100%">
     <img src="./otaku-hapi.svg" alt="otaku hapi">
 </div>
+
+
+# Todos:   
+    - Install & Import Puppeteer
+    - Clicks And Follow The Links For Scraping The Source
+
+
+# API DOCS
+
+```
+method:"GET", 
+path:"/detail", 
+params: ?id={id bisa didapat di GET /}
+```

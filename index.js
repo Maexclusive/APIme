@@ -5,6 +5,8 @@ import { Search } from "otakuanime/services/search";
 import Genres from "otakuanime/services/genres";
 import Completed from "otakuanime/services/completed";
 import Detail from "otakuanime/services/detail";
+// import Video from "otakuanime/services/video";
+import Video from "./services/video.js";
 
 const initialization = async function () {
   const server = Hapi.server({
@@ -59,6 +61,18 @@ const initialization = async function () {
         return await Detail(request.query.id); 
       }else{
         return await Detail(null);
+      }
+    }
+  })
+
+  server.route({
+    method:"GET",
+    path:"/nonton",
+    handler:async function (request) {
+      if(request.query.id){
+        return await Video(request.query.id); 
+      }else{
+        return await Video(null);
       }
     }
   })
