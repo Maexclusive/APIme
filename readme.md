@@ -1,6 +1,9 @@
 ## OTAKUANIME API
 
 
+Inspired By https://github.com/arakbae/otakuanime
+
+
 ####  OTAKUDESU ANIME SUBTITLE INDONESIA 
 
 | Features | Options | Status |
